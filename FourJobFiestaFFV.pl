@@ -92,6 +92,7 @@ if ($run_type eq 'normal'){
 			}
 	}
 } elsif ($run_type eq '750') {
+	# 750 run restricts you to magic users only (essentially)
 	my $rand1 = int(rand(scalar(@magic)));
 	my $rand2 = int(rand(scalar(@magic)));
 	my $rand3 = int(rand(scalar(@magic)));
@@ -102,6 +103,7 @@ if ($run_type eq 'normal'){
 	$fire_crystal = $magic[$rand3];
 	$earth_crystal = $magic[$rand4];
 } elsif ($run_type eq 'no750') {
+	# No750 run restricts you to non-magic users only (essentially)
 	my $rand1 = int(rand(scalar(@no_magic)));
 	my $rand2 = int(rand(scalar(@no_magic)));
 	my $rand3 = int(rand(scalar(@no_magic)));
